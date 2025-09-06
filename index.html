@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles-container" id="particles"></div>
+    
+    <div class="calculator-container">
+        <div class="calculator-glass">
+            <div class="display-container">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+                <div class="display-border"></div>
+            </div>
+            
+            <div class="buttons-grid">
+                <button class="calc-btn function" data-action="clear">
+                    <span>AC</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn function" data-action="backspace">
+                    <span>⌫</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn function" data-action="percent">
+                    <span>%</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn operation" data-action="divide">
+                    <span>÷</span>
+                    <div class="btn-background"></div>
+                </button>
+                
+                <button class="calc-btn number" data-value="7">
+                    <span>7</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn number" data-value="8">
+                    <span>8</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn number" data-value="9">
+                    <span>9</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn operation" data-action="multiply">
+                    <span>×</span>
+                    <div class="btn-background"></div>
+                </button>
+                
+                <button class="calc-btn number" data-value="4">
+                    <span>4</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn number" data-value="5">
+                    <span>5</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn number" data-value="6">
+                    <span>6</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn operation" data-action="subtract">
+                    <span>−</span>
+                    <div class="btn-background"></div>
+                </button>
+                
+                <button class="calc-btn number" data-value="1">
+                    <span>1</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn number" data-value="2">
+                    <span>2</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn number" data-value="3">
+                    <span>3</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn operation" data-action="add">
+                    <span>+</span>
+                    <div class="btn-background"></div>
+                </button>
+                
+                <button class="calc-btn number double" data-value="0">
+                    <span>0</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn number" data-value=".">
+                    <span>.</span>
+                    <div class="btn-background"></div>
+                </button>
+                <button class="calc-btn operation equals" data-action="calculate">
+                    <span>=</span>
+                    <div class="btn-background"></div>
+                </button>
+            </div>
+            
+            <div class="calculator-shadow"></div>
+        </div>
+        
+        <div class="calculator-base"></div>
+        <div class="floating-particles"></div>
+    </div>
+    
+    <div class="theme-switcher">
+        <button id="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
